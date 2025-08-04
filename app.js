@@ -1,5 +1,5 @@
 const axios = require('axios');
-const prompt = require('prompt-sync')({ sigint: true }); // permite Ctrl+C sin romper
+const prompt = require('prompt-sync')({ sigint: true }); 
 
 const pais = prompt('Ingrese el nombre de un país: ');
 
@@ -19,5 +19,5 @@ axios.get(url)
     console.log(`👥 Población: ${data.population.toLocaleString()} habitantes`);
   })
   .catch(error => {
-    console.error('\n❌ No se pudo obtener información.');
+    console.error('\n No se encontro información.');
   });
